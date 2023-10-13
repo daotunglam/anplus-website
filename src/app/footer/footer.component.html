@@ -1,81 +1,112 @@
 <div class="footer">
 
-    <p class="title">FAHREN SIE ZU UNS</p>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                FAHREN SIE ZU UNS
+            </mat-card-title>
+        </mat-card-header>
 
-    <a mat-list-item href="https://maps.app.goo.gl/rLgE3t4zgzkVvgoP6">
-        <mat-icon matListItemIcon>location_on</mat-icon>
-        <div matListItemTitle>Fuchsenweg 2A, 82110</div>
-    </a>
-
-    <div class="googlemapContainer">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d340920.87432516203!2d11.376086!3d48.120954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dd6516ae95555%3A0xe6e62df673d4c671!2sFuchsenweg%202a%2C%2082110%20Germering%2C%20Deutschland!5e0!3m2!1sde!2sus!4v1697138944896!5m2!1sde!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <mat-divider></mat-divider>
-
-    <div class="grid-tpl-col-250">
-        <div class="column1">
-            <div class="logo"></div>
-
-            <div class="logo-sub">
-                Ihr Pflegedienst
-                <br> in Germering und München West
+        <mat-card-content>
+            <div class="googlemapContainer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d340920.87432516203!2d11.376086!3d48.120954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dd6516ae95555%3A0xe6e62df673d4c671!2sFuchsenweg%202a%2C%2082110%20Germering%2C%20Deutschland!5e0!3m2!1sde!2sus!4v1697138944896!5m2!1sde!2sus"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </mat-card-content>
 
-        </div>
+        <mat-card-footer>
+            <mat-divider></mat-divider>
+        </mat-card-footer>
+    </mat-card>
 
-        <div class="column2">
-            <p class="title">KONTAKT</p>
+    <mat-card>
+        <mat-card-content class="grid-tpl-col-250">
+            <mat-card>
+                <img mat-card-image src="../../assets/Kopie-von-Anplus-1.png" alt="logo" />
+                <mat-card-header>
+                    <mat-card-title align="center">
+                        Ihr Pflegedienst
+                        <br> in Germering und München West
+                    </mat-card-title>
+                </mat-card-header>
+            </mat-card>
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>ÜBER UNS</mat-card-title>
+                </mat-card-header>
 
-            <a mat-list-item href="tel:+08974442242">
-                <mat-icon matListItemIcon>phone</mat-icon>
-                <div matListItemTitle>089 74 44 22 42</div>
-            </a>
+                <mat-card-content>
+                    <mat-action-list>
+                        <a mat-list-item href="https://maps.app.goo.gl/rLgE3t4zgzkVvgoP6">
+                            <mat-icon matListItemIcon>location_on</mat-icon>
+                            <div matListItemTitle>Fuchsenweg 2A, 82110</div>
+                        </a>
 
-            <a mat-list-item href="tel:+017648999089">
-                <mat-icon matListItemIcon>smartphone</mat-icon>
-                <div matListItemTitle>0176 48 99 90 89</div>
-            </a>
+                        <a mat-list-item class="imprint" target="_blank" href="#">
+                            <mat-icon matListItemIcon>verified_user</mat-icon>
+                            <div matListItemTitle>Impressum</div>
+                        </a>
 
-            <a mat-list-item href="mailto:info@anplus-pflege.de">
-                <mat-icon matListItemIcon>mail</mat-icon>
-                <div matListItemTitle>info@anplus-pflege.de</div>
-            </a>
+                        <a mat-list-item class="policy" target="_blank" href="#">
+                            <mat-icon matListItemIcon>verified_user</mat-icon>
+                            <div matListItemTitle>Datenschutzerklärung</div>
+                        </a>
+                    </mat-action-list>
+                </mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>KONTAKT</mat-card-title>
+                </mat-card-header>
 
-            <mat-list-item>
-                <mat-icon matListItemIcon>fax</mat-icon>
-                <div matListItemTitle>Fax: 089 74 44 22 47</div>
-            </mat-list-item>
-        </div>
+                <mat-card-content>
+                    <mat-action-list>
+                        <a mat-list-item href="tel:+08974442242">
+                            <mat-icon matListItemIcon>phone</mat-icon>
+                            <div matListItemTitle>089 74 44 22 42</div>
+                        </a>
 
-        <div class="column3">
-            <p class="title">ÜBER UNS</p>
+                        <a mat-list-item href="tel:+017648999089">
+                            <mat-icon matListItemIcon>smartphone</mat-icon>
+                            <div matListItemTitle>0176 48 99 90 89</div>
+                        </a>
 
-            <mat-list>
-                <a mat-list-item class="imprint" target="_blank" href="#">
-                    <div matListItemTitle>Impressum</div>
-                </a>
+                        <a mat-list-item href="mailto:info@anplus-pflege.de">
+                            <mat-icon matListItemIcon>mail</mat-icon>
+                            <div matListItemTitle>info@anplus-pflege.de</div>
+                        </a>
 
-                <a mat-list-item class="policy" target="_blank" href="#">
-                    <div matListItemTitle>Datenschutzerklärung</div>
-                </a>
+                        <mat-list-item>
+                            <mat-icon matListItemIcon>fax</mat-icon>
+                            <div matListItemTitle>Fax: 089 74 44 22 47</div>
+                        </mat-list-item>
+                    </mat-action-list>
+                </mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>SOCIAL</mat-card-title>
+                </mat-card-header>
 
-                <a mat-list-item target="_blank" href="https://www.facebook.com/anpluspflegedienst">
-                    <mat-icon>facebook</mat-icon>
-                </a>
+                <mat-card-actions>
+                    <a mat-button target="_blank" href="https://wa.me/004917642947873">
+                        <img width="20" src="../../assets/whatsapp-icon.svg" alt="whatsapp-icon">
+                    </a>
+                    <a mat-button target="_blank" href="https://www.facebook.com/anpluspflegedienst">
+                        <img width="24" src="../../assets/facebook-icon.svg" alt="whatsapp-icon">
+                    </a>
+                </mat-card-actions>
+            </mat-card>
+        </mat-card-content>
 
-                <a mat-list-item target="_blank" href="https://wa.me/004917642947873">
-                    <img width="20" src="../../assets/whatsapp-icon.svg" alt="whatsapp-icon">
-                </a>
-            </mat-list>
-        </div>
-    </div>
-
-    <mat-divider></mat-divider>
-    <p>
-        <a href="https://tunglam-dao.com.de">Web Developer tunglam-dao</a>
-    </p>
+        <mat-card-footer>
+            <mat-divider></mat-divider>
+            <p align="center">
+                <a href="https://tunglam-dao.com.de">Web Developer tunglam-dao</a>
+            </p>
+        </mat-card-footer>
+    </mat-card>
 
 </div>

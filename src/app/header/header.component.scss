@@ -1,7 +1,5 @@
 .header {
-    background-image: url('../../assets/header-img.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('../../assets/header-img.jpg') center/cover;
 
     position: relative;
     display: flex;
@@ -18,11 +16,9 @@
 
     /* Media Query for Small Screens (e.g., smartphones) */
     @media (max-width: 768px) {
-        height: 300px;
+        height: fit-content;
         /* Adjust height for small screens */
     }
-
-    padding: 16px;
 
     .darkOverlay {
         position: absolute;
@@ -30,15 +26,40 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.4);
         /* Semi-transparent black overlay */
     }
+    
+    .content {
+        z-index: 1; /* Place content above the overlay */
+        color: white;
+        padding: 16px;
+    }
 
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+    }
 }
 
-.content{
-    z-index: 1;
+.grid-tpl-col-250 {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.title {
-    color: white;
+
+.column {
+    display: flex;
+    justify-content: center;
+}
+
+mat-card {
+    background-color: transparent;
+    border: 1px white solid;
+    span {
+        color: white;
+    }
 }
